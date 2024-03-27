@@ -5,13 +5,13 @@
 ## Dependency
 #### Go
 ```shell
-cd path/to/RESTFUL-API
+cd path/to/RESTful-API
 go mod tidy
 ```
 
 #### Python
 ```shell
-cd path/to/RESTFUL-API/client_py
+cd path/to/RESTful-API/client_py
 pip install -r requirements.txt
 ```
 
@@ -22,8 +22,8 @@ pip install -r requirements.txt
 git clone {cpp-httplib} # refer 1.cpp-httplib
 git clone {json} # refer 2.nlohmann/json
 
-mv cpp-httplib /path/to/RESTFUL-API/client_cpp
-mv json /path/to/RESTFUL-API/client_cpp
+mv cpp-httplib /path/to/RESTful-API/client_cpp
+mv json /path/to/RESTful-API/client_cpp
 ```
 
 ---
@@ -36,11 +36,11 @@ go run server.go
 #### Client (Python)
 ```shell
 python main.py --method {GET/DELETE/PUT/POST} \
---id {data's id want to update or get}
+--id ?
 ```
 
 #### Client (CPP)
 ```shell
 g++ main.cpp -o main # compile *.cpp file
-./main {methods} {id}
+./main {GET/DELETE/PUT/POST} {id}
 ```
